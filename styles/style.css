@@ -36,6 +36,7 @@ body{
     background-size: cover;
     background-position: center;
     position: relative;
+    align-self: stretch;
 }
 
 .logo-area {
@@ -61,7 +62,7 @@ body{
 }
 
 .right {
-    height: 100%;
+    height: auto;
     width: 65%;
     min-width: 345px;
     background-color: white;
@@ -86,6 +87,7 @@ body{
 }
 
 .top p {
+    padding-top: 5%;
     font-size: 1.5rem;
     max-width: 70%;
 }
@@ -181,6 +183,7 @@ a, a:visited, a:hover {
 }
 
 .bottom p {
+    padding-bottom: 15%;
     font-size: 1rem;
     font-weight: 600;
     color: rgb(63, 59, 59);
