@@ -1,0 +1,192 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(../fonts/norse-2.woff);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: rgb(42, 39, 39);
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;   
+}
+
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.left {
+    width: 35%;
+    min-width: 345px;
+    height: 100%;
+    background: url(../images/leaf.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.logo-area {
+    position: relative;
+    top: 20%;
+    background-color: rgba(0, 0, 0, .52);
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.logo-area h1 {
+    font-family: norse-bold, sans-serif;
+    color: white;
+}
+
+#logo {
+    height: 80%;
+    width: auto;
+}
+
+.right {
+    height: 100%;
+    width: 65%;
+    min-width: 345px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top, .bottom {
+    height: 34%;
+    width: 100%;
+    background-color: rgb(246, 246, 246);
+    padding: 30px;
+}    
+
+.top {
+    font-weight: 510;
+    display: flex;
+    align-items: end;
+    padding-bottom: 50px;
+}
+
+.top p {
+    font-size: 1.5rem;
+    max-width: 70%;
+}
+
+.middle {
+    height: 32%;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+    padding: 30px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rgb(63, 59, 59);
+}
+
+.middle p {
+    margin-bottom: 20px;
+}
+
+.form-area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    row-gap: 10px;
+    column-gap: 80px;
+}
+
+.form-area > div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 300px;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+    font-size: 1rem;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+input:focus {
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.3);
+    outline: 1px solid blue;
+}
+
+.error {
+    outline: 1px solid hsl(0, 84%, 50%);
+}
+
+.error-message {
+    font-size: 0.7rem;
+    color: hsl(0, 64%, 50%);
+    font-weight: 400;
+    display: none;
+}
+
+#credits {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 2vh;
+    left: 0;
+    right: 0;
+}
+
+a, a:visited, a:hover {
+    color: inherit;
+}
+
+#submit {
+    background-color: #596D48;
+    height: 3rem;
+    width: 250px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border: none;
+    margin-bottom: 2rem;
+}
+
+#submit:active {
+    background-color: hsl(92, 20%, 55%);
+}
+
+.bottom p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(63, 59, 59);
+}
+
+.bottom a {
+   text-decoration: none;
+   color:#596D48;
+}
